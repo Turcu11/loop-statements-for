@@ -19,6 +19,15 @@ namespace loop_statements_for
                 Console.Write(text[i]);
             }
             Console.WriteLine();
+            int numberOfDigits = 0;
+            for (int i = 0; i < text.Length; i++)
+            {
+                if(char.IsDigit(text[i]))
+                {
+                    numberOfDigits++;
+                }
+            }
+            Console.WriteLine($"Textul introdus are {numberOfDigits} cifre");
         }
     }
 }
